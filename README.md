@@ -14,9 +14,7 @@ For this last step, it will be required two files containg the condition of each
 Next diagram represents the workflow of both pipelines in this repository, with main inputs and outputs. 
 The box marked with '*' is not included in the Nextflow code.
 
-<p align="center">
 ![Pipeline workflow](https://user-images.githubusercontent.com/116556564/199960696-5276126f-213d-4656-b426-a6e4c4e09fb0.png)
-</p>
 
 
 ## Dependencies  
