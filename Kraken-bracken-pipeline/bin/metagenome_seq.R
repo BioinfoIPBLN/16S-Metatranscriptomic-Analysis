@@ -3,12 +3,6 @@
 library(metagenomeSeq)
 library(ggfortify)
 library(sva)
-library(ggrepel)
-library(cluster)
-library(factoextra)
-library(ggplot2)
-library(M3C)
-library(ggfortify)
 
 # Load data
 arg <- commandArgs(trailingOnly = TRUE)
