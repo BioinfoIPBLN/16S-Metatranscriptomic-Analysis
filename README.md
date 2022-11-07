@@ -40,11 +40,8 @@ If differential abundance analysis have to be performed:
 * Rstudio
 * R packages:
     * [metagenomeSeq](https://www.bioconductor.org/packages/release/bioc/html/metagenomeSeq.html)
-    * ggplot2, ggfortify, ggrepel
-    * sva
-    * cluster
-    * factoextra
-    * M3C
+    * [ggfortify](https://cran.r-project.org/web/packages/ggfortify/index.html)
+    * [sva](https://bioconductor.org/packages/release/bioc/html/sva.html)
 
 ## Choosing between kraken and Qiime pipelines
 
