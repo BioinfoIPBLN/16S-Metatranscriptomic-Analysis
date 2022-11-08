@@ -16,6 +16,10 @@ The box marked with '*' is not included in the Nextflow code.
 
 ![Pipeline workflow](https://user-images.githubusercontent.com/116556564/199960696-5276126f-213d-4656-b426-a6e4c4e09fb0.png)
 
+## Usage
+At the moment, only local and SLURM runs are supported. Therefore, in order to execute any of these pipelines it is necessary to download this repository and run the main.nf file of the desired pipeline with the command "nextflow run".
+
+In the "nextflow.config" files of each of the pipelines there are several execution profiles with an assigned memory and number of CPUs. These profiles can be modified based on the characteristics of the computer on which the pipelines are to be executed and the input files of these pipelines.
 
 ## Dependencies  
 
