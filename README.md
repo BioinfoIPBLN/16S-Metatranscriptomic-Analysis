@@ -44,6 +44,11 @@ If differential abundance analysis have to be performed:
     * [sva](https://bioconductor.org/packages/release/bioc/html/sva.html)
 
 ## Choosing between kraken and Qiime pipelines
+Generally, the kraken-bracken pipeline will perform much faster and in a more parallelizable way. However, there are certain cases in which the use of the Qiime pipeline is more appropriate, such as in cases where 16S data is analyzed or for benchmarking with the results obtained at the genus level.  
+
+It is also worth mentioning that the results obtained by the pipelines will depend to a large extent on the reference database used for the analysis.  
+
+For more information about the performance of each of the methods, see our associated paper, in which we discuss more deeply the advantages and disadvantages of each of these pipelines (not available yet).
 
 ## References
 1. Di Tommaso, P.; Chatzou, M.; Floden, E.W.; Barja, P.P.; Palumbo, E.; Notredame, C. Nextflow 
