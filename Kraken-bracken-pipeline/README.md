@@ -7,8 +7,8 @@ Metatranscriptomics (RNA) data analysis pipeline using kraken for OTU detection 
 There are some important inputs that are requested and other inputs and options that have a default value, which can also be modified. 
 You can check all of these parameters by using the --help command of the pipeline.  
 
-All inputs and options can be modified either by command line or directly by changing their default value in the nextflow.config file. 
-To modify them by command line you have to type "--name of the variable desired value" right after the execution command.  
+All inputs and options can be modified either from the command line or directly by changing their default value in the nextflow.config file. 
+To modify them from the command line you have to type `--"name of the variable" "desired value"` right after the execution command.  
 
 ### reads  
 Location where your input fastq files are. Example:  
@@ -21,11 +21,11 @@ It is possible to specify whether the reads are paired or not (parameter pairedE
 If they are paired, it is necessary to use **{1,2}** notation to specify read pairs.  
 
 ### krakendb  
-Path to Kraken database. This database should be downloaded and builded before executing this pipeline, however, 
-there is no need for an specific database to perform.
+Path to Kraken database. This database should be downloaded and built before executing this pipeline, however, 
+there is no need for a specific database to perform.
 
 Nevertheless, it is important to reserve enough memory to load the chosen database. The default memory to load the database is 5 GB, but it 
-can be tunned by changing the parameter "kraken_mem".  
+can be tuned by changing the parameter "kraken_mem".  
 
 ### targets
 
@@ -38,7 +38,7 @@ A tab-separated values file that contains the names and condition of every sampl
 | GSMXXXX3 | ConditionB 1 |   B  |   Female   |
   
 It is required that the third column contains the condition that will be compared in the differential abundance analysis. 
-It is also possible (but optional), to add a 4th column that correspond to a determined covariable to be fitted in the model (in the example, sex variable).
+It is also possible (but optional), to add a 4th column that corresponds to a determined covariable to be fitted in the model (in this example, the sex variable).
 
 ### contrast
 
@@ -56,8 +56,8 @@ The main output obtained from this pipeline is a file with the extension ".tab" 
 and other file with the extension ".tsv" that contains the names of the different OTUs detected. Krona plots are also obtained (if skip_krona=false)
 in a unique directory called "krona_reports"
 
-Additionally, if differential abundance analisys is performed, a file with differentially abundant OTUs with some interest statistics (logFC, 
-p-value, etc.) will be obtained, as different clustering plots of the different samples in the experiment(in a unique pdf file).
+Additionally, if differential abundance analysis is performed, a file with differentially abundant OTUs with some interest statistics (logFC, 
+p-value, etc.) will be obtained, as well as different clustering plots of the different samples in the experiment(in a unique pdf file).
 
 
 ## Help
@@ -72,7 +72,7 @@ Mandatory arguments:
   --reads                       Path to input data (if paired end sequences must be a regular expression such as *{1,2}.fastq.gz)
   --krakendb                    Path to kraken database
 Settings:
-  --kraken_mem                  Necesary memory to load kraken database. Default = 5 GB
+  --kraken_mem                  Necessary memory to load kraken database. Default = 5 GB
   --confidence                  Confidence score threshold (0-1). Default = 0
   --pairedEnd                   Specifies if reads are paired-end (true | false). Default = true
   --skip_bracken_build          Skip building bracken database (true | false). Default = true
