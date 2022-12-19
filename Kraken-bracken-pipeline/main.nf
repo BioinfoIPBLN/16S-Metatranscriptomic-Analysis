@@ -7,7 +7,7 @@ def helpMessage() {
       --reads                       Path to input data (if paired end sequences must be a regular expression such as *{1,2}.fastq.gz)
       --krakendb                    Path to kraken database
     Settings:
-      --kraken_mem                  Necesary memory to load kraken database. Default = ${params.kraken_mem}
+      --kraken_mem                  Necessary memory to load kraken database. Default = ${params.kraken_mem}
       --confidence                  Confidence score threshold (0-1). Default = ${params.confidence}
       --pairedEnd                   Specifies if reads are paired-end (true | false). Default = ${params.pairedEnd}
       --skip_bracken_build          Skip building bracken database (true | false). Default = ${params.skip_bracken_build}
